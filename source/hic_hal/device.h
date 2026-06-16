@@ -44,6 +44,8 @@
 #include "stm32f1xx.h"
 #elif defined (INTERFACE_STM32H743)
 #include "stm32h7xx.h"
+#elif defined(INTERFACE_STLINKCLONE)
+#include "stm32f1xx.h"
 #elif defined (INTERFACE_M48SSIDAE)
 #include "M480.h"
 #elif defined (INTERFACE_NRF52820)

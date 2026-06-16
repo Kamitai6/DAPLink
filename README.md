@@ -57,3 +57,10 @@ DAPLink is licensed with the permissive Apache 2.0 license. See the [LICENSE](LI
 full text of the license.
 
 Copyright © 2006-2023 Arm Ltd
+
+# 開発環境
+arm-none-eabi-gcc --version 
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python tools/progen_compile.py -t make_gcc_arm stlinkclone_if
