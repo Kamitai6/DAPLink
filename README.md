@@ -59,13 +59,18 @@ full text of the license.
 Copyright © 2006-2023 Arm Ltd
 
 # 開発環境
+[ちょっと前のバージョンのstlinkcloneを参考にした](https://github.com/ziutek/DAPLink/tree/develop)も参考にした。
+```
+pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-libusb make pkg-config
+```
+
 ```
 arm-none-eabi-gcc --version 
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-python tools/progen_compile.py -t make_gcc_arm stlinkclone_if
-C:\stlink-tool\stlink-tool.exe projectfiles/make_gcc_arm/stlinkclone_if/build/stlinkclone_if.bin
+python tools/progen_compile.py -t make_gcc_arm stlinkv2_if
+C:\stlink-tool\stlink-tool.exe projectfiles/make_gcc_arm/stlinkv2_if/build/stlinkv2_if.bin
 ```
 
 Using (everytime)

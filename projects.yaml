@@ -118,9 +118,9 @@ module:
         - records/rtos/rtos-cm4.yaml
         - records/hic_hal/stm32h743xx.yaml
         - records/usb/usb-hid.yaml
-    hic_stlinkclone: &module_hic_stlinkclone
+    hic_stlinkv2: &module_hic_stlinkv2
         - records/rtos/rtos-cm3.yaml
-        - records/hic_hal/stlinkclone.yaml
+        - records/hic_hal/stlinkv2.yaml
         - records/usb/usb-hid.yaml
 
 projects:
@@ -248,9 +248,9 @@ projects:
         - *module_hic_stm32h743xx
         - records/family/all_family.yaml
         - records/usb/usb-bulk.yaml
-    stlinkclone_if:
+    stlinkv2_if:
         - *module_if
-        - *module_hic_stlinkclone
+        - *module_hic_stlinkv2
         - records/family/all_family.yaml
         - records/usb/usb-bulk.yaml
 
